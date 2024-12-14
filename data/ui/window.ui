@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <template class="NotesWindow" parent="AdwApplicationWindow">
-    <property name="width-request">320</property>
-    <property name="height-request">480</property>
+    <property name="width-request">1220</property>
+    <property name="height-request">1080</property>
+    <property name="default-width">800</property>
+    <property name="default-height">600</property>
     <property name="title" translatable="yes">笔记</property>
     <child type="content">
       <object class="AdwNavigationView" id="stack">
@@ -14,10 +16,10 @@
               <object class="GtkBox">
                 <property name="orientation">vertical</property>
                 <child>
-                  <object class="GtkHeaderBar">
+                  <object class="AdwHeaderBar">
                     <property name="title-widget">
                       <object class="GtkLabel">
-                        <property name="label" translatable="yes">笔记</property>
+                        <property name="label" translatable="yes">MyNotes 笔记</property>
                         <property name="single-line-mode">True</property>
                         <property name="ellipsize">end</property>
                         <property name="width-chars">5</property>
@@ -26,10 +28,10 @@
                         </style>
                       </object>
                     </property>
-                    <property name="show-title-buttons">false</property>
                     <child type="end">
                       <object class="GtkButton" id="add_button">
-                        <property name="label" translatable="yes">新增</property>
+                        <property name="icon_name">plus-symbolic</property>
+                        <property name="tooltip_text" translatable="yes">新增笔记</property>
                         <!-- <style>
                           <class name="flat" />
                         </style> -->

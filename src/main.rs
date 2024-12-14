@@ -1,3 +1,7 @@
+#![cfg_attr(
+    all(not(debug_assertions), target_os = "windows"),
+    windows_subsystem = "windows"
+  )]
 mod details_page;
 mod note_row;
 mod window;
@@ -8,10 +12,10 @@ use gtk::prelude::*;
 use gtk::{gio, glib};
 use window::Window;
 
-static APP_ID: &str = "com.jasper.ji.gtk.rs.notes";
+static APP_ID: &str = "github.linruohan.notes";
 
 fn main() -> glib::ExitCode {
-    gio::resources_register_include!("gtk4-rs-notes.gresource")
+    gio::resources_register_include!("mynotes.gresource")
         .expect("Failed to register resources.");
 
     // Create a new application

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/github/linruohan/notes/">
+    <file compressed="true" preprocess="xml-stripblanks">ui/window.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/create_page.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/details_page.ui</file>
+    <file compressed="true" preprocess="xml-stripblanks">ui/note_row.ui</file>
+    <file preprocess="xml-stripblanks">icons/empty.svg</file>
+    <file preprocess="xml-stripblanks">icons/plus-symbolic.svg</file>
+  </gresource>
+</gresources>

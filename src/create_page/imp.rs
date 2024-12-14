@@ -9,7 +9,7 @@ use adw::subclass::prelude::NavigationPageImpl;
 
 // Object holding the state
 #[derive(Default, CompositeTemplate)]
-#[template(resource = "/com/jasper/ji/gtk/rs/notes/create_page.ui")]
+#[template(resource = "/github/linruohan/notes/ui/create_page.ui")]
 pub struct CreatePage {
     // #[template_child]
     // pub back_button: TemplateChild<Button>,

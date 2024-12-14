@@ -9,7 +9,7 @@ use adw::subclass::prelude::NavigationPageImpl;
 
 // Object holding the state
 #[derive(Default, CompositeTemplate)]
-#[template(resource = "/com/jasper/ji/gtk/rs/notes/details_page.ui")]
+#[template(resource = "/github/linruohan/notes/ui/details_page.ui")]
 pub struct DetailsPage {
     #[template_child]
     pub edit_button: TemplateChild<Button>,
